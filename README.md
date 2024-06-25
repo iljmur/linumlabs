@@ -253,34 +253,3 @@ Authentication token
 ...
 ]
 ```
-
-- [404 Not Found] if user not found
-
-```
-{
-    "message": "Failed to fetch user from reqres using id:***",
-    "error": "Not Found",
-    "statusCode": 404
-}
-```
-
-Below are the available API endpoints:
-/signup
-Sign up to the system (username, password)
-/login
-Logs in an existing user with a password
-/me
-Get the currently logged in user information (username and number of followers)
-/me/update-password
-Update the current users password
-/user/:id/
-List username & number of followers of a user
-/user/:id/follow
-Like a user
-/user/:id/unfollow
-Un-Like a user
-/user/:id/create-message
-/most-followed
-List users in a most liked to least liked
-Each user can follow another only once, and they can unfollow eachother.
-Select the appropriate REST calls (get, put,post, delete) by yourself.

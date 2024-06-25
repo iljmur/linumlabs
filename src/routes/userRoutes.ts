@@ -12,7 +12,7 @@ router.put("/me/update-password", authenticate, UserController.updatePassword);
 
 router.get("/user/:id", UserController.getUser);
 router.post("/user/:id/follow", authenticate, UserController.followUser);
-router.delete("/user/:id/unfollow", authenticate, UserController.unfollowUser);
+router.post("/user/:id/unfollow", authenticate, UserController.unfollowUser);
 router.post(
   "/user/:id/create-message",
   authenticate,
